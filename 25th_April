@@ -1,0 +1,127 @@
+if else if:
+	if(condition)
+	{}
+	else if(Condition)
+	{}
+	else if(Condition)
+	{}
+	else
+	{}
+	WAP to accept Sp , Cp , Profit , loss
+	
+	Switch case: 
+	
+	switch(var/ exp)
+	{
+	case 1:
+				statement block;
+				break;
+	case 2:
+				statement block;
+				break;
+	case 3:
+				statement block;
+				break;
+	case 4:
+				statement block;
+				break;
+	default:
+				statement block;
+				break;
+	
+	}
+	
+	
+	Nested conditional statement:
+	Accept the choice from the user and perform the task
+	1:Greater between three no
+	2: Area of rectangle
+	3: Cube if no is divide by 7
+	4:accept age and gender and display RI (above 60 m:7 , f:7.5) (below 60 m,f=5%)
+	
+	
+	age, gen
+	if(age>=60 && gen=='m')
+	{
+		if(gen=='m')
+				{7 % IR}
+		
+	}
+	if else (age>=60 && gen=='f')
+	{
+			7.5 % IR
+	}
+	else
+	{
+		Display 5% IR
+	}
+	
+	
+  ---------------------------------------------
+  import java.util.Scanner;
+
+public class switch_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ch;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Ente your choice \n 1:Withdraw \t 2:Pin change \n 3:Deposit \t 4:Balance");
+		ch=sc.nextInt();
+		switch(ch)
+		{
+		case 1:
+			System.out.println("Perofrm the withdraw opration");
+			break;
+		case 2:
+			System.out.println("Perofrm the pin change opration");
+			break;
+		case 3:
+			System.out.println("Perofrm the credi  opration");
+			break;
+		case 4:
+			System.out.println("Perofrm the balance opration");
+			break;
+		default:
+			System.out.println("Invalid choice");
+			break;
+		}
+		
+		
+
+	}
+
+}
+
+--------------------------------
+import java.util.Scanner;
+
+public class Profit_loss {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		int sp,cp,res;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Ente ypu SP");
+		sp=sc.nextInt();
+		System.out.println("Ente your CP");
+		cp=sc.nextInt();
+		res=sp-cp;
+		//System.out.println("The profit is ="+res);
+		if(res>0)
+		{
+			System.out.println("Profit"+res);
+		}
+		else if( res<0)
+		{
+			System.out.println(" loss"+(-res));
+		}
+		else
+		{
+			System.out.println("Nothing"+(-res));
+		}
+
+	}
+}
